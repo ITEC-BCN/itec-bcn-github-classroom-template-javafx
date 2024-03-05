@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- A l'element root cal linkar-li el nom del fx:controller -->
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="org.example.templategithubjavafxkotlin.HelloController">
+    <!-- Usem el tag <padding> per a maquetar l'escena -->
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <!-- Element Label per mostrar text -->
+    <Label fx:id="welcomeText" />
+
+    <!-- Element Button per a interactuar amb l'usuari@ -->
+    <Button fx:id="buttonHello" onMouseClicked="#onbuttonHelloClick" text="Click Here!" textFill="#ee0c0c"/>
+</VBox>
